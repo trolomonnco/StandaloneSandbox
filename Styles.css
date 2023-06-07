@@ -1,0 +1,436 @@
+
+
+body{
+  margin : 0;
+  text-align: center;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+  background-color: #CDE990;
+}
+p{
+  padding: 8px;
+  margin: 0;
+}
+b{
+  background-color: black;
+}
+h1{
+  margin:0;
+  padding: 20px;
+  color: black;
+}
+h2{
+  padding: 5px;
+}
+h3{
+  padding: 5px;
+  
+}
+hr{
+  border: 5px dashed #FFD4D4;
+ 
+}
+.right{
+ position: absolute;
+ max-width: 40%;
+ max-height: 10%;
+ margin-left: 55%;
+ padding: 6px;
+ font-size: 20px;
+
+
+}
+
+.left{
+  position: absolute;
+  max-width: 40%;
+  max-height: 10%;
+  margin-left: 19%;
+  padding: 6px;
+  font-size: 20px;
+  
+}
+
+.dropbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+.inputSource{
+  position: absolute;
+  max-width: 40%;
+  max-height: 10%;
+  margin-left: 24%;
+  margin-top: 2%;
+}
+.inputRendered{
+  position: absolute;
+ max-width: 40%;
+ max-height: 10%;
+ margin-left: 66%;
+ margin-top: 2%;
+}
+
+
+.cors{
+  background-color: #FFD4D4;
+  border-style: solid;
+  border-color: black;
+  color: black;
+}
+
+img{
+  max-width: 100%;
+  /*max-height: 100%;*/
+  
+  
+}
+.dataInput{
+  
+
+}
+.navBar{
+  width: 100%;
+  height: 58px;
+  background-color: rgb(75, 71, 71);
+  color: White;
+  border-top: 5px solid grey; ;
+  border-bottom:  5px solid grey;;
+ 
+  
+}
+.selectedOption{
+  position: relative;
+  float: left;
+  background-color: #040caa;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+ 
+
+}
+
+.displayedFile1{
+  position: relative;
+  float: left;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  
+
+}
+
+.displayedFile2{
+  position: relative;
+  float: left;
+  background-color: white;
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  
+ 
+
+}
+
+.run{
+  position: relative;
+  float: left;
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  
+  
+}
+
+.banner{
+background-color: white;
+color: black;
+
+}
+
+
+.logo{
+  max-width: 5%;
+}
+
+.logo img{
+  position: relative;
+  float: left;
+  max-width: 75px;
+  max-height: 75px;
+  
+}
+
+button{
+  border: 4px solid rgb(0, 0, 0);
+  
+}
+
+#buttonClick {
+  background-color: #59ad23; /* Green */
+  border: 5px solid grey;;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#buttonClick:hover {
+  background-color: white; /* Green */
+  border:  5px solid grey;
+  color: #59ad23;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.split {
+  height: 80%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top:17.8%;
+  /*overflow-x: hidden;*/
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.contentSide {
+  right: 0;
+  background-color: rgb(142, 186, 236);
+  color: black;
+  overflow-x: hidden;
+
+  
+}
+
+/* Control the right side */
+.sourceSide{
+  left: 0;
+  background-color: rgb(44, 43, 43);
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.sourceCodeBox{
+  color: white;
+  padding: 2%;
+ 
+}
+
+textarea{
+  height: 80%;
+  width: 96%;
+  font-size: 14px;
+  word-wrap: break-word;
+  margin-top: -2.2%;
+  border: 0;
+  /*border-bottom:  2px solid grey;*/
+
+}
+
+.bottomElement{
+  position: absolute;
+  bottom: 0;
+  background-color: #37aa3b;
+  height: 50%;
+  width: 100%;
+  
+}
+
+.blogContent{
+position: absolute;
+bottom: 0;
+background-color: white;
+width: 70%;
+height: 100%;
+z-index: 2;
+left:15%;
+overflow-y:auto;
+
+
+
+}
+
+.adviceContainer{
+  position: absolute;
+  bottom: 0;
+  background-color: #59ad23;
+  
+  height: 20%;
+  width: 100%;
+}
+.highlightedArticle{
+  position: relative;
+  float: left;
+  width:95%;
+  margin-left: 2.2%;
+
+  height: 30%;
+  background-color: grey;
+  overflow: hidden;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+  
+
+}
+
+.slothAdvice{
+  height: 15%;
+  background-color: #59ad23;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.techSloth{
+  position: relative;
+  float: right;
+  max-height: 80%;
+  margin: 1%;
+  border: 4px solid grey;
+}
+
+.regularArticle{
+position: relative;
+float: left;
+width: 40%; 
+height: 15%;
+background-color: grey;
+margin-left: 6.5%;
+margin-top:2%;
+margin-bottom: 2%;
+overflow: hidden;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 25px;
+
+}
+
+.slothAdvice p {
+  max-width: 80%;
+  position: relative;
+  float: left;
+  color: white;
+  text-align: left;
+  margin-left: 1%;
+  margin-top: 1%;
+  
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.582);
+  margin:5%;
+}
+
+.highlightedTitle{
+  position: relative;
+  background-color: rgb(142, 186, 236);
+}
+
+.footer{
+  position: absolute;
+  bottom: -100px;
+  height: 100px;
+  width: 100%;
+  background-color: #04AA6D;
+}
+#ezoic-pub-ad-placeholder-103 {
+  position: relative;
+float: left;
+width: 80%; 
+height: 100px;
+background-color: #c7c7c7;
+margin-left: 10%;
+margin-top:2%;
+margin-bottom: 2%;
+overflow: hidden;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 25px;
+
+  
+  
+}
+
+#ezoic-pub-ad-placeholder-104 {
+position: relative;
+float: left;
+width: 40%; 
+height: 15%;
+background-color: #c7c7c7;
+margin-left: 6.5%;
+margin-top:2%;
+margin-bottom: 2%;
+overflow: hidden;
+border: 2px solid rgb(0, 0, 0);
+border-radius: 25px;
+ 
+
+  
+  
+}
+
+#ezoic-pub-ad-placeholder-105 {
+  position: relative;
+  float: left;
+  width: 40%; 
+  height: 15%;
+  background-color: #c7c7c7;
+  margin-left: 6.5%;
+  margin-top:2%;
+  margin-bottom: 2%;
+  overflow: hidden;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 25px;
+   
+  
+    
+    
+  }
+
