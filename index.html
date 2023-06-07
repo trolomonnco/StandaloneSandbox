@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <meta charset="utf-8">
+        <title>Standalone Checker</title> 
+        <link rel="stylesheet" href="css/Styles.css">
+        <script src="js/is-client-side-rendering.js"></script>
+    </head>
+    <body>
+        <div class="banner"> 
+            <table id="banner">
+            <tr> 
+                <div class="logo"><IMG SRC="ezoic.png" ></div>
+                <h1>The Standalone Sandbox</h1> 
+                
+                
+            </tr>
+            </table>
+        </div>
+        
+        <div class="navBar">
+            
+            <div class="dropdown">
+                <button class="dropbtn">Source</button>
+                <div class="dropdown-content">
+                  <a href="#">Vanilla JS HTML</HTML></a>
+                  <a href="#">React</a>
+                  <a href="#">Vue</a>
+                  <a href="#">Angular</a>
+                  <a href="#">Next</a>
+                </div>
+              </div>
+            <button class="selectedOption">HTML + Javascript</button>
+            <button class="displayedFile1">Index.html</button>
+            <button class="displayedFile2">Index.js</button>
+            <button class="run" onclick = "detectChanges()">RUN</button>
+            
+        </div>
+        <div class="content">
+            <div class="split sourceSide">
+            
+                    
+                <textarea id ="source" name= "source" class=" sourceSide sourceCodeBox" rows="80" cols="180"><!DOCTYPE html>
+                    <html> 
+                        <head>
+                            <meta charset="utf-8">
+                            <title>Standalone Checker</title> 
+                            <link rel="stylesheet" href="css/Styles.css">
+                            <script src="js/is-client-side-rendering.js"></script>
+                        </head>
+                        <body>
+                            <div class="blogContent">
+                                <h1 class="exampleHeader">Welcome to SlothsRUS</h1>
+                                
+                                
+                                <div class="highlightedArticle article1">
+                                    <h2 class="title"> What kind of sloth are you?</h2>
+                                    <IMG class = "sloth" SRC="sloth1.jpg" >
+            
+                                </div>
+                               
+                                
+                                <div class="regularArticle article1">
+                                    <h3 class = "title">Top 5 cool sloths!</h3>
+                                    <IMG class = "sloth" SRC="sloth2.jpg" >
+                                </div> 
+                                <div class="regularArticle article2">
+                                    <h3 class = "title">Another 10 EPIC sloths!</h3>
+                                    <IMG class = "sloth" SRC="sloth3.jpg" >
+                                </div> 
+                                <div class="regularArticle article3">
+                                    <h4 class = "title">Meet this shy sloth (Steven)</h4>
+                                    <IMG class = "sloth" SRC="sloth4.jpg" >
+                                </div> 
+                                <div class="regularArticle article4">
+                                    <h3 class = "title">Sloths, Lazy or Not?</h3>
+                                    <IMG class = "sloth" SRC="sloth5.jpg" >
+                                </div> 
+            
+                                <div class="regularArticle article5">
+                                    <h3 class = "title">Hang out with the sloths!</h3>
+                                    <IMG class = "sloth" SRC="sloth6.jpg" >
+                                </div> 
+            
+                                <div class="regularArticle article6">
+                                    <h3 class = "title">Wait a second...</h3>
+                                    <IMG  class = "sloth" SRC="sloth7.jpg" >
+                                </div> 
+                                
+                                <div class="regularArticle article7">
+                                    <h3 class = "title">Wait a second...</h3>
+                                    <IMG  class = "sloth" SRC="sloth7.jpg" >
+                                </div> 
+                                <div class="regularArticle article8">
+                                    <h3 class = "title">Wait a second...</h3>
+                                    <IMG  class = "sloth" SRC="sloth8.jpg" >
+                                </div> 
+            
+                                
+                                
+                            </div>
+                            <div class="bottomElement">
+                                
+                            </div> 
+            
+                            
+            
+                            <div class="footer">
+                                
+                                <p> This is where the footer lives</p>
+                            </div>
+                        </body>
+                    </html></textarea>
+
+                    <div id = "alarmBox" class="slothAdvice">
+                        <p id="slothChat">Hello I am Tech sloth! Why dont you try adding: <br> <b>&#60;script async src="//www.ezojs.com/ezoic/sa.min.js"> &#60;/script></b> <br>  Into the <b>&#60;head></b> of the page :)</p>
+                        <IMG class = "techSloth" id="sloth" SRC="techSloth0.png" >
+                    </div>
+                    
+                  
+                
+            </div>
+           
+            <div class="split contentSide" id="editingBox">
+                
+                <div class="blogContent">
+                    <h1 class="exampleHeader">Welcome to SlothsRUS</h1>
+                    
+                    
+                    <div class="highlightedArticle article1">
+                        <h2 class="title"> What kind of sloth are you?</h2>
+                        <IMG class = "sloth" SRC="sloth1.jpg" >
+
+                    </div>
+
+                    
+                    <div class="regularArticle article1">
+                        <h3 class = "title">Top 5 cool sloths!</h3>
+                        <IMG class = "sloth" SRC="sloth2.jpg" >
+                    </div> 
+
+                    
+                    
+                    <div class="regularArticle article2">
+                        <h3 class = "title">Another 10 EPIC sloths!</h3>
+                        <IMG class = "sloth" SRC="sloth3.jpg" >
+                    </div> 
+
+                    
+                    
+                    
+                    <div class="regularArticle article3">
+                        <h4 class = "title">Meet this shy sloth (Steven)</h4>
+                        <IMG class = "sloth" SRC="sloth4.jpg" >
+                    </div> 
+                    <div class="regularArticle article4">
+                        <h3 class = "title">Sloths, Lazy or Not?</h3>
+                        <IMG class = "sloth" SRC="sloth5.jpg" >
+                    </div> 
+
+                    <div class="regularArticle article5">
+                        <h3 class = "title">Hang out with the sloths!</h3>
+                        <IMG class = "sloth" SRC="sloth6.jpg" >
+                    </div> 
+
+                    <div class="regularArticle article6">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth7.jpg" >
+                    </div> 
+                    
+                    
+                    <div class="regularArticle article7">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth7.jpg" >
+                    </div> 
+                    <div class="regularArticle article8">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth8.jpg" >
+                    </div> 
+                    <div class="regularArticle article9">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth8.jpg" >
+                    </div> 
+                    <div class="regularArticle article10">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth8.jpg" >
+                    </div> 
+
+
+                    <div class="regularArticle article11">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth8.jpg" >
+                    </div> 
+                    <div class="regularArticle article12">
+                        <h3 class = "title">Wait a second...</h3>
+                        <IMG  class = "sloth" SRC="sloth8.jpg" >
+                    </div> 
+
+                    
+                    
+                </div>
+                <div class="bottomElement">
+                    
+                </div> 
+                
+
+                
+
+                <div class="footer">
+                    
+                    <p> This is where the footer lives</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+        
+
+        
+
+        
+    </body>
+</html>
+
+<!-- 
+ The placeholders available for insert are
+
+ Incontent/top of page banner size
+ <div id="ezoic-pub-ad-placeholder-103"></div>
+ 
+ Incontent article size
+ <div id="ezoic-pub-ad-placeholder-104"></div>
+
+ Incontent article size
+ <div id="ezoic-pub-ad-placeholder-105"></div>
+
+
+
+
+-->
+
